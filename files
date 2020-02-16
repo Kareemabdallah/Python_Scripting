@@ -1,0 +1,8 @@
+#!/bin/python
+
+xmen_file = open('xmen.txt')
+
+for line in xmen_file:
+    print(lin)
+
+xmen_file.close()
