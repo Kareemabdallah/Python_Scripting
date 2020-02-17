@@ -3,3 +3,10 @@ Wolverine
 Cyclops
 Bishop
 Nightcrawler
+Beast
+Phoenix
+Morph
+Rogue
+Morph
+Rogue
+Professor Xavier

@@ -1,8 +1,6 @@
 #!/bin/python
 
-xmen_file = open('xmen.txt')
+import os
 
-for line in xmen_file:
-    print(lin)
-
-xmen_file.close()
+with open('xmen.txt', 'a') as xmen_file:
+    xmen_file.write("Professor Xavier\n")

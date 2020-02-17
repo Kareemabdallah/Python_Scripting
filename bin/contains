@@ -9,4 +9,5 @@ args = parser.parse_args()
 snippet = args.snippet.lower()
 
 words = open('/usr/share/dict/words').readlines()
-print([word for word in words if snippet in word.lower()])
+
+print([word.strip() for word in words if snippet in word.lower()])
