@@ -3,6 +3,7 @@
 import argparse
 import subprocess
 import os
+from sys import exit
 
 parser = argparse.ArgumentParser()
 parser.add_argument('port', type=int, help='the port number to search for')
@@ -13,6 +14,7 @@ try:
     output = subprocess.check_output(['lsof', '-n', '-i4TCP:%s' % port])
 except subprocess.CalledProcessError as err:
     print("No process listening on port %s" % port)
+    exit(1)
 else: 
     listening = None
 
@@ -28,3 +30,4 @@ else:
         print("killed process %s" % pid)
     else:
         print("No process listening on port %s" % port)
+        exit(1)
